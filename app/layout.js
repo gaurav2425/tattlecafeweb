@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Navbar from "./components/Navbar";
 const geistSans = Roboto({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.geistMono}`}>{children}</body>
+      <body className={`${geistSans.geistMono}`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
