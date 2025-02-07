@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 
 .desc_banner {
-  font-family: "Gilroy", sans-serif;
+  /* font-family: "Gilroy", sans-serif; */
   color: red;
 }
 
@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #f6f4df;
 }
 .Link {
@@ -52,7 +52,7 @@
   /* z-index: ; */
 }
 .container1 h1 {
-  font-family: "Gilroy", sans-serif;
+  /* font-family: "Gilroy", sans-serif; */
   font-weight: 600;
   font-size: 90px;
   color: #ffffff;
@@ -86,7 +86,7 @@
   text-align: center;
 }
 .bar h1 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 500;
   font-size: 15px;
   color: rgb(255, 255, 255);
@@ -94,7 +94,7 @@
   /* background-color: rgb(15, 72, 226); */
 }
 .container1 h2 {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -120,7 +120,7 @@
 .button_container h3 {
   background-color: white;
   /* padding: 10px; */
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   font-weight: 600;
   margin-left: 10px;
 }

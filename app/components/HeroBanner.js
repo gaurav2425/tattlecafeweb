@@ -12,13 +12,13 @@ function HeroBanner() {
   return (
     <div className={styles.container}>
       <div className={styles.bg_img}>
-        <Image
+        {/* <Image
           src="/pexels-caleboquendo-3038145.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"
-          quality={100} // Better quality
-        />
+          quality={100}
+        /> */}
       </div>
 
       {/* <div className={styles.bar}>
@@ -53,10 +53,10 @@ function HeroBanner() {
                 color: "#fff",
                 // padding: 10,
                 borderRadius: 10,
-                fontWeight: "500",
+                // fontWeight: "500",
                 fontFamily: "poppins",
               }}
-              className={styles.desc_banner}
+              // className={styles.desc_banner}
             >
               Tattle is built on the belief that real connections start with
               real conversations. That’s why we’ve created a cafe-style,
@@ -81,14 +81,16 @@ function HeroBanner() {
               alignItems: "center",
             }}
           >
-            <h1
+            <p
               style={{
-                fontSize: 17,
+                fontSize: 18,
                 color: "#000",
+                // background: "red",
+                fontWeight: "600",
               }}
             >
               Get Started
-            </h1>
+            </p>
             <div
               style={{
                 padding: 15,
