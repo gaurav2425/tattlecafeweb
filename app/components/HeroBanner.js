@@ -31,22 +31,33 @@ function HeroBanner() {
         <div className={styles.left_container1_content}>
           <h1
             style={{
-              fontFamily: "poppins",
+              fontFamily: "Poppins, sans-serif",
               position: "relative",
               lineHeight: "1.1",
             }}
           >
-            The <span>Cafe</span> &{" "}
+            The{" "}
             <span
               style={{
-                color: "#61204E",
+                WebkitTextStroke: "3px #fff", // Stroke effect
+                color: "transparent", // Remove fill
+              }}
+            >
+              Cafe
+            </span>{" "}
+            &{" "}
+            <span
+              style={{
+                WebkitTextStroke: "3px #fff", // Stroke effect
+                color: "transparent", // Remove fill
               }}
             >
               Audio
             </span>
-            <br></br>
+            <br />
             Based Dating
           </h1>
+
           {/* <h1>Based Dating</h1> */}
           <div
             style={{
