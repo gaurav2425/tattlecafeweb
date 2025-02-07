@@ -12,13 +12,13 @@ function HeroBanner() {
   return (
     <div className={styles.container}>
       <div className={styles.bg_img}>
-        {/* <Image
+        <Image
           src="/pexels-caleboquendo-3038145.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"
           quality={100}
-        /> */}
+        />
       </div>
 
       {/* <div className={styles.bar}>
@@ -29,7 +29,13 @@ function HeroBanner() {
 
       <div className={styles.container1}>
         <div className={styles.left_container1_content}>
-          <h1>
+          <h1
+            style={{
+              fontFamily: "poppins",
+              position: "relative",
+              lineHeight: "1.1",
+            }}
+          >
             The <span>Cafe</span> &{" "}
             <span
               style={{
@@ -87,6 +93,7 @@ function HeroBanner() {
                 color: "#000",
                 // background: "red",
                 fontWeight: "600",
+                fontFamily: "poppins",
               }}
             >
               Get Started
