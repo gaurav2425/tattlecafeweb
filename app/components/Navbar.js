@@ -5,8 +5,8 @@ import Link from "next/link";
 import Image from "next/image"; // Next.js optimized image
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
-import MenuIcon from "@mui/icons-material/Menu";
-import DragHandleIcon from "@mui/icons-material/DragHandle";
+// import MenuIcon from "@mui/icons-material/Menu";
+// import DragHandleIcon from "@mui/icons-material/DragHandle";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -64,7 +64,7 @@ export default function Navbar() {
       </div>
 
       <div className={styles.navbar_right_icon_container}>
-        <DragHandleIcon className={styles.navbar_menu_icon} fontSize="large" />
+        {/* <DragHandleIcon className={styles.navbar_menu_icon} fontSize="large" /> */}
       </div>
     </div>
   );
