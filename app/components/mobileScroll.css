@@ -27,7 +27,7 @@
 .mobile-mockup-wrapper {
   width: 50%;
 
-  position: relative;
+  /* position: relative; */
 
   /* Ensure the wrapper allows sticky positioning */
 }

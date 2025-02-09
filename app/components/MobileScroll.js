@@ -18,13 +18,13 @@ const scrollData = [
     heading: "Join an Active Community",
     description:
       " Every member of TattleCafe is verified and actively participating. No more matching with abandoned profiles or inactive users – our community is alive and engaging",
-    mobile_img: "/phone.png",
+    mobile_img: "/inviteonlyphone.png",
   },
   {
     heading: "Time-Limited Cafes",
     description:
       "Experience the thrill of exclusivity! Time-Limited Cafes are open for specific hours or days, creating a sense of urgency and excitement. Start your day with great conversations in the Morning Brews cafe, unwind after hours in the Night Owls' Den, or make the most of your weekend in the Weekend Wonders cafe. These fleeting moments make every interaction special—don’t miss your chance to connect!",
-    mobile_img: "/hand.png",
+    mobile_img: "/phone.png",
   },
   // {
   //   heading: "for your eclectic taste.",

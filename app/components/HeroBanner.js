@@ -80,7 +80,6 @@ function HeroBanner() {
               audio-first dating experience—where voices spark chemistry, and
               meaningful matches are made in minutes. No endless swiping, just
               genuine interactions that bring you closer to someone special.
-              Here’s how we do it.
             </p>
           </div>
           <div

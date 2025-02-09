@@ -12,6 +12,7 @@ export default function Home() {
       <HeroBanner></HeroBanner>
       {/* <JoinWaitlist /> */}
       <Container1></Container1>
+
       <div>
         <MobileScroll></MobileScroll>
       </div>
