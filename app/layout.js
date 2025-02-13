@@ -3,34 +3,35 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 
 export const metadata = {
-  title: "Dating Room - Find Your Match",
+  title: "TattleCafe | Best Audio Speed Dating & Matchmaking App",
   description:
-    "Join Dating Room to meet new people, chat, and find your perfect match in our virtual cafes.",
-  keywords: "dating, relationships, matchmaking, chat rooms, virtual cafes",
+    "TattleCafe is the ultimate audio-based speed dating app where real-time matchmaking happens in virtual café rooms. Get matched, chat for 6 minutes, and find your perfect connection.",
+  keywords:
+    "speed dating, dating app, real-time matchmaking, audio dating, virtual café rooms, chat rooms, find a match, online dating, relationship app",
   openGraph: {
-    title: "Dating Room - Find Your Match",
+    title: "TattleCafe | Best Audio Speed Dating & Matchmaking App",
     description:
-      "Join Dating Room to meet new people, chat, and find your perfect match in our virtual cafes.",
+      "Experience the best real-time audio speed dating platform. Get matched instantly in virtual cafés, chat for 6 minutes, and meet new people.",
     url: "https://www.tattlecafe.com",
     siteName: "TattleCafe",
     images: [
       {
-        url: "https://pbs.twimg.com/profile_images/1884608798482198528/G-9VRzY1_400x400.png", // Update with your actual OG image
+        url: "https://www.tattlecafe.com/images/og-image.jpg", // Replace with your actual OG image
         width: 1200,
         height: 630,
-        alt: "Dating Room - Find Your Match",
+        alt: "TattleCafe - Best Speed Dating App",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dating Room - Find Your Match",
+    title: "TattleCafe | Best Audio Speed Dating App",
     description:
-      "Meet new people, chat, and enjoy virtual cafes at Dating Room.",
+      "Join TattleCafe to meet new people, chat, and find your perfect match in real-time virtual café rooms.",
     images: [
-      "https://pbs.twimg.com/profile_images/1884608798482198528/G-9VRzY1_400x400.png",
-    ], // Update with actual Twitter image
+      "https://www.tattlecafe.com/images/twitter-image.jpg", // Replace with actual Twitter image
+    ],
   },
 };
 
