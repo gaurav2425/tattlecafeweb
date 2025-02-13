@@ -1,0 +1,36 @@
+.bar_container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #f6f4df;
+  /* width: 85vw; */
+  border-bottom: 1px solid rgb(119, 115, 115);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.bar_sub_container h1 {
+  font-family: Gilroy-Bold;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+.bar_sub_container p {
+  font-family: Gilroy-Bold;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+.bar_sub_container {
+  width: 85vw;
+}
+.bar_heading_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background: saddlebrown; */
+}

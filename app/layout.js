@@ -1,13 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"], // Choose the weights you need
-  variable: "--font-poppins", // Define a CSS variable for global use
-});
 
 export const metadata = {
   title: "Dating Room - Find Your Match",
@@ -40,6 +33,12 @@ export const metadata = {
     ], // Update with actual Twitter image
   },
 };
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
 
 export default function RootLayout({ children }) {
   return (
