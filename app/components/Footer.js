@@ -59,7 +59,7 @@ function Footer() {
 
         <div className={styles.footer_container_right}>
           <h5 className={styles.footer_right_title}>
-            Cafe & Audio-based dating
+            Cafe & Audio Based Dating
           </h5>
           <p>
             If you're looking for a motivated and skilled individual to
@@ -72,10 +72,34 @@ function Footer() {
           <h1 className={styles.connect_social}>Connect Social</h1>
 
           <div className={styles.social_icons}>
-            <AlternateEmailIcon size={40} className={styles.email_icon} />
-            <TwitterIcon size={40} className={styles.twitter_icon} />
-            <LinkedInIcon size={40} className={styles.linkedin_icon} />
-            <InstagramIcon size={40} className={styles.instagram_icon} />
+            <AlternateEmailIcon
+              fontSize="large"
+              className={styles.email_icon}
+              style={{
+                marginRight: 5,
+              }}
+            />
+            <TwitterIcon
+              fontSize="large"
+              className={styles.twitter_icon}
+              style={{
+                marginRight: 5,
+              }}
+            />
+            <LinkedInIcon
+              fontSize="large"
+              className={styles.linkedin_icon}
+              style={{
+                marginRight: 5,
+              }}
+            />
+            <InstagramIcon
+              fontSize="large"
+              className={styles.instagram_icon}
+              style={{
+                marginRight: 5,
+              }}
+            />
           </div>
         </div>
       </div>
