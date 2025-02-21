@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import styles from "./Footer.module.css";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
+// import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+// import LinkedInIcon from "@mui/icons-material/LinkedIn";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import TwitterIcon from "@mui/icons-material/Twitter";
 import Image from "next/image";
 import Triangle from "./Triangle";
 
@@ -69,9 +69,9 @@ function Footer() {
             Feel free to reach out, and let's explore collaboration
             possibilities together.
           </p>
-          <h1 className={styles.connect_social}>Connect Social</h1>
+          {/* <h1 className={styles.connect_social}>Connect Social</h1> */}
 
-          <div className={styles.social_icons}>
+          {/* <div className={styles.social_icons}>
             <AlternateEmailIcon
               fontSize="large"
               className={styles.email_icon}
@@ -100,7 +100,7 @@ function Footer() {
                 marginRight: 5,
               }}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
