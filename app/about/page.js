@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "../About/About.module.css";
+import styles from "../components/AboutBar";
 // import Navbar from "../../Components/Navbar";
 // import Footer from "../../Components/Footer";
 import AboutBar from "../components/AboutBar";
-import SEO from "../../Seo/SEO";
 function About() {
   const data = [
     {
@@ -38,7 +37,7 @@ function About() {
       {/* <SEO></SEO> */}
       <div className={styles.container1}>
         <div className={styles.container1_left}>
-          <img src={require("../../assets/about_img.png")}></img>
+          <img src={require("../assets/about_img.png")}></img>
         </div>
 
         <div className={styles.container1_right}>
