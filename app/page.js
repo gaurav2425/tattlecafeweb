@@ -6,21 +6,21 @@ import JoinWaitlist from "./pages/JoinWaitlist";
 import Container1 from "./components/Container1";
 import MobileScroll from "./components/MobileScroll";
 import Footer from "./components/Footer";
-import { DefaultSeo } from "next-seo";
-import SEO from "../next-seo.config";
-import Head from "next/head";
+// import { DefaultSeo } from "next-seo";
+// import SEO from "../next-seo.config";
+// import Head from "next/head";
 export default function Home() {
   return (
     <div className={""}>
-      <Head>
+      {/* <Head>
         <title>{SEO.title}</title>
         <meta name="description" content={SEO.description} />
         <meta name="keywords" content={SEO.keywords.join(", ")} />
-      </Head>
+      </Head> */}
 
-      <DefaultSeo {...SEO} />
+      {/* <DefaultSeo {...SEO} /> */}
       <HeroBanner></HeroBanner>
-      {/* <JoinWaitlist /> */}
+
       <Container1></Container1>
 
       <div>
