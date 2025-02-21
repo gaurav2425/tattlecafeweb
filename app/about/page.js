@@ -36,9 +36,9 @@ function About() {
       {/* <Navbar></Navbar> */}
       {/* <SEO></SEO> */}
       <div className={styles.container1}>
-        <div className={styles.container1_left}>
+        {/* <div className={styles.container1_left}>
           <img src={require("../assets/about_img.png")}></img>
-        </div>
+        </div> */}
 
         <div className={styles.container1_right}>
           <h1>Find your tribe, and love them hard</h1>
