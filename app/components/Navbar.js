@@ -33,7 +33,8 @@ export default function Navbar() {
   return (
     <div
       className={bgColor ? styles.navbar_animated : styles.navbar}
-      data-aos="fade-down"
+      // className={bgColor ? styles.navbar_animated : styles.navbar}
+      // data-aos="fade-down"
       // style={{ backgroundColor: bgColor || "#fff" }}
     >
       <div className={styles.navbar_right}>

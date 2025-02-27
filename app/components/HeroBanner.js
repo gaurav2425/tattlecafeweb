@@ -13,7 +13,7 @@ function HeroBanner() {
     <div className={styles.container}>
       <div className={styles.bg_img}>
         <Image
-          src="/pexels-caleboquendo-3038145.jpg"
+          src="/pexels-urfriendlyphotog-29641629.jpg"
           alt="Background"
           layout="fill"
           objectFit="cover"

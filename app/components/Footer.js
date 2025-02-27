@@ -7,7 +7,12 @@ import styles from "./Footer.module.css";
 // import TwitterIcon from "@mui/icons-material/Twitter";
 import Image from "next/image";
 import Triangle from "./Triangle";
-
+import {
+  InstagramIcon,
+  XIcon,
+  FacebookIcon,
+  TattleIconSvg,
+} from "../components/svg";
 function Footer() {
   const [triangleCount, setTriangleCount] = useState(0);
 
@@ -54,7 +59,7 @@ function Footer() {
             height={250}
             alt="Picture of the author"
           />
-          <h1>Tattle</h1>
+          <TattleIconSvg></TattleIconSvg>
         </div>
 
         <div className={styles.footer_container_right}>
@@ -69,6 +74,37 @@ function Footer() {
             Feel free to reach out, and let's explore collaboration
             possibilities together.
           </p>
+
+          <div
+            style={{
+              display: "flex",
+              // background: "red",
+              marginTop: 10,
+            }}
+          >
+            <div
+              style={{
+                marginRight: 10,
+              }}
+            >
+              <InstagramIcon></InstagramIcon>
+            </div>
+
+            <div
+              style={{
+                marginRight: 10,
+              }}
+            >
+              <XIcon></XIcon>
+            </div>
+            <div
+              style={{
+                marginRight: 10,
+              }}
+            >
+              <FacebookIcon></FacebookIcon>
+            </div>
+          </div>
           {/* <h1 className={styles.connect_social}>Connect Social</h1> */}
 
           {/* <div className={styles.social_icons}>
