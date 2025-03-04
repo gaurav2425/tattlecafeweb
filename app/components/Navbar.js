@@ -8,6 +8,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 // import MenuIcon from "@mui/icons-material/Menu";
 // import DragHandleIcon from "@mui/icons-material/DragHandle";
 import styles from "./Navbar.module.css";
+import { MenuIconSvg } from "./svg";
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("Home");
@@ -65,6 +66,7 @@ export default function Navbar() {
       </div>
 
       <div className={styles.navbar_right_icon_container}>
+        <MenuIconSvg></MenuIconSvg>
         {/* <DragHandleIcon className={styles.navbar_menu_icon} fontSize="large" /> */}
       </div>
     </div>
