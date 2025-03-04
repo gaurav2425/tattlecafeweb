@@ -1,20 +1,36 @@
+import { useState, useEffect } from "react";
 import styles from "./HeroBanner.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
 
 function HeroBanner() {
-  //   useEffect(() => {
-  //     AOS.init({
-  //       duration: 2000,
-  //     });
-  //   }, []);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+
+    // Ensure this runs only on the client
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setIsMobile(window.innerWidth < 1200);
+      };
+
+      handleResize(); // Initial check
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
   return (
     <div className={styles.container}>
       <div className={styles.bg_img}>
         <Image
           src={
-            window.innerWidth < 1200
+            isMobile
               ? "/pexels-urfriendlyphotog1-29641629.jpg"
               : "/pexels-urfriendlyphotog-29641629.jpg"
           }
@@ -24,12 +40,6 @@ function HeroBanner() {
           quality={100}
         />
       </div>
-
-      {/* <div className={styles.bar}>
-        <h1>
-          Discover cafes filled with fascinating and unexpected conversations
-        </h1>
-      </div> */}
 
       <div className={styles.container1}>
         <div className={styles.left_container1_content}>
@@ -51,8 +61,8 @@ function HeroBanner() {
               The{" "}
               <span
                 style={{
-                  WebkitTextStroke: "3px #fff", // Stroke effect
-                  color: "transparent", // Remove fill
+                  WebkitTextStroke: "3px #fff",
+                  color: "transparent",
                 }}
               >
                 Cafe
@@ -60,8 +70,8 @@ function HeroBanner() {
               &{" "}
               <span
                 style={{
-                  WebkitTextStroke: "3px #fff", // Stroke effect
-                  color: "transparent", // Remove fill
+                  WebkitTextStroke: "3px #fff",
+                  color: "transparent",
                 }}
               >
                 Audio
@@ -70,7 +80,6 @@ function HeroBanner() {
               Based Dating
             </h1>
 
-            {/* <h1>Based Dating</h1> */}
             <div
               style={{
                 width: 500,
@@ -81,12 +90,9 @@ function HeroBanner() {
               <p
                 style={{
                   color: "#fff",
-                  // padding: 10,
                   borderRadius: 10,
-                  // fontWeight: "500",
                   fontFamily: "poppins",
                 }}
-                // className={styles.desc_banner}
               >
                 Tattle is built on the belief that real connections start with
                 real conversations. That’s why we’ve created a cafe-style,
@@ -113,7 +119,6 @@ function HeroBanner() {
                 style={{
                   fontSize: 18,
                   color: "#000",
-                  // background: "red",
                   fontWeight: "600",
                   fontFamily: "poppins",
                 }}
@@ -138,7 +143,6 @@ function HeroBanner() {
                   <path
                     d="M16 14C16 13.258 16.733 12.15 17.475 11.22C18.429 10.02 19.569 8.973 20.876 8.174C21.856 7.575 23.044 7 24 7M24 7C23.044 7 21.855 6.425 20.876 5.826C19.569 5.026 18.429 3.979 17.475 2.781C16.733 1.85 16 0.740001 16 8.34465e-07M24 7L1.43051e-06 7"
                     stroke="white"
-                    // stroke-width="2"
                   />
                 </svg>
               </div>
@@ -146,7 +150,6 @@ function HeroBanner() {
           </div>
           <div
             style={{
-              // marginTop: "5%",
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
@@ -157,7 +160,7 @@ function HeroBanner() {
               width={586 / 2}
               height={200 / 2}
               alt="Picture of the author"
-            ></Image>
+            />
           </div>
         </div>
       </div>
