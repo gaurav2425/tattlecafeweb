@@ -366,6 +366,9 @@
     display: flex;
     background-color: red;
   }
+  .left_container1_content {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 400px) {
