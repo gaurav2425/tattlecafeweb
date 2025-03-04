@@ -12,6 +12,10 @@
   /* z-index: -5; */
 }
 
+.container1 {
+  flex: 1;
+  height: 100%;
+}
 .container1 h1 {
   /* font-family: "Gilroy", sans-serif; */
   font-weight: 600;
@@ -23,12 +27,17 @@
 .left_container1_content {
   justify-content: flex-start;
   flex-direction: column;
+
   display: flex;
   /* border: 1px solid red; */
   align-items: flex-start;
-  margin-left: 2%;
+  /* margin-left: 2%; */
   /* margin-top: 10%; */
+  /* background: red; */
   position: relative;
+  justify-content: space-between;
+  height: 100%;
+  padding: 40px;
 }
 .bar {
   height: 40px;
@@ -181,11 +190,24 @@
   src: url("../../../public/Gilroy-Bold.ttf");
 } */
 
+@media screen and (max-width: 1800px) {
+  .container1 h1 {
+    /* font-family: "Gilroy", sans-serif; */
+    font-weight: 600;
+    font-size: 60px;
+    color: #ffffff;
+    margin-top: 10%;
+  }
+}
 @media screen and (max-width: 1100px) {
   .iphone {
     width: 150px;
     display: none;
     /* margin-right: 20vw; */
+  }
+  .container1 {
+    /* font-family: "Gilroy", sans-serif; */
+    display: none;
   }
 }
 
@@ -201,9 +223,11 @@
   }
   .left_container1_content h1 {
     font-size: 50px;
+    display: none;
   }
   .left_container1_content {
     margin-bottom: 20px;
+    display: none;
   }
 }
 

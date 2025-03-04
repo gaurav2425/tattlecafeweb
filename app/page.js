@@ -21,12 +21,12 @@ export default function Home() {
       {/* <DefaultSeo {...SEO} /> */}
       <HeroBanner></HeroBanner>
 
-      <Container1></Container1>
+      {/* <Container1></Container1> */}
 
-      <div>
+      {/* <div>
         <MobileScroll></MobileScroll>
       </div>
-      <Footer></Footer>
+      <Footer></Footer> */}
     </div>
   );
 }
