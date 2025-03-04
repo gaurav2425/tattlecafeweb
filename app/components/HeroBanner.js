@@ -57,6 +57,7 @@ function HeroBanner() {
                 position: "relative",
                 lineHeight: "1.1",
               }}
+              className={styles.banner_heading}
             >
               The{" "}
               <span
@@ -86,6 +87,7 @@ function HeroBanner() {
                 color: "#000",
                 marginTop: 20,
               }}
+              className={styles.banner_content}
             >
               <p
                 style={{
@@ -156,6 +158,7 @@ function HeroBanner() {
             }}
           >
             <Image
+              className={styles.girls_images}
               src="/girlsprofile.png"
               width={586 / 2}
               height={200 / 2}

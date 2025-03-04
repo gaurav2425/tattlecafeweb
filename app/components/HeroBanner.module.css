@@ -217,17 +217,32 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    /* background-color: red; */
   }
   .desc_banner {
-    display: none;
+    /* display: none; */
+  }
+  .left_container1_content {
+    /* background-color: red; */
   }
   .left_container1_content h1 {
     font-size: 50px;
-    display: none;
+    /* display: none; */
   }
   .left_container1_content {
     margin-bottom: 20px;
+    /* display: none; */
+    /* background-color: red; */
+    justify-content: flex-end;
+  }
+  .banner_content {
     display: none;
+  }
+  .girls_images {
+    display: none;
+  }
+  .banner_heading {
+    font-size: 10px;
   }
 }
 
@@ -319,18 +334,19 @@
     /* background-size: contain; */
     /* background-size: 100%; */
     /* background-repeat:no-repeat ; */
+    background-color: red;
 
-    height: 80vh;
+    height: 100vh;
   }
   .get_started_btn {
     display: none;
   }
   .container1 h1 {
     margin-top: 0px;
-    font-size: 40px;
+    font-size: 30px;
   }
   .quote_container {
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
   }
   .quote_container h1 {
     font-size: 10px;
@@ -346,26 +362,11 @@
     padding-left: 5px;
     border-radius: 50px;
     font-size: 10px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     display: flex;
+    background-color: red;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .container1 {
-    /* background-size: contain; */
-    /* background-size: 100%; */
-    /* background-repeat:no-repeat ; */
-
-    height: 60vh;
-  }
-  .container1 h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-
-    color: #ffffff;
-    /* color: rgb(0, 0, 0); */
-    /* letter-spacing: -10; */
-  }
 }
