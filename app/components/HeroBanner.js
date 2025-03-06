@@ -127,7 +127,7 @@ function HeroBanner() {
                   fontFamily: "poppins",
                 }}
               >
-                Get Started
+                Book your seat
               </p>
               <div
                 style={{
