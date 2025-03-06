@@ -27,18 +27,18 @@
 
 .curtainTop {
   top: 0;
-  animation: curtainOpenTop 4s ease forwards;
+  animation: curtainOpenTop 8s ease forwards;
 }
 
 .curtainBottom {
   top: 50%;
-  animation: curtainOpenBottom 2s ease forwards;
+  animation: curtainOpenBottom 4s ease forwards;
 }
 
 @keyframes curtainOpenTop {
   0% {
     top: 0;
-    height: 50%;
+    height: 60%;
   }
   100% {
     top: -50%;
@@ -49,7 +49,7 @@
 @keyframes curtainOpenBottom {
   0% {
     top: 50%;
-    height: 50%;
+    height: 60%;
   }
   100% {
     top: 100%;
