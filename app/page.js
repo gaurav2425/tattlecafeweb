@@ -21,7 +21,7 @@ export default function Home() {
       {/* <DefaultSeo {...SEO} /> */}
       <HeroBanner></HeroBanner>
 
-      {/* <Container1></Container1> */}
+      <Container1></Container1>
 
       {/* <div>
         <MobileScroll></MobileScroll>
