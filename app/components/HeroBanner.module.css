@@ -27,7 +27,7 @@
 
 .curtainTop {
   top: 0;
-  animation: curtainOpenTop 2s ease forwards;
+  animation: curtainOpenTop 4s ease forwards;
 }
 
 .curtainBottom {
