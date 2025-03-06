@@ -101,21 +101,14 @@ const MenuIconSvg = () => {
       fill="none"
     >
       <path
-        d="M4 5L20 5"
+        d="M4 8.5L20 8.5"
         stroke="currentColor"
         stroke-width="1.5"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M4 12L20 12"
-        stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M4 19L20 19"
+        d="M4 15.5L20 15.5"
         stroke="currentColor"
         stroke-width="1.5"
         stroke-linecap="round"
