@@ -63,7 +63,7 @@ function HeroBanner() {
               style={{
                 fontFamily: "Poppins, sans-serif",
                 position: "relative",
-                // lineHeight: "1.1",
+                lineHeight: "1.1",
               }}
               className={styles.banner_heading}
             >
