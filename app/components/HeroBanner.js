@@ -156,6 +156,8 @@ function HeroBanner() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "space-between",
+                position: "absolute",
+                bottom: 10,
               }}
             >
               <Image
