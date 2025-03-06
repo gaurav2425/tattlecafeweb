@@ -48,7 +48,7 @@ function HeroBanner() {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              marginTop: "5%",
+              // marginTop: "5%",
             }}
           >
             <h1
@@ -150,7 +150,7 @@ function HeroBanner() {
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -164,7 +164,7 @@ function HeroBanner() {
               height={200 / 2}
               alt="Picture of the author"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
