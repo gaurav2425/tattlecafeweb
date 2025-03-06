@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import styles from "./HeroBanner.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,44 +6,36 @@ import Image from "next/image";
 
 function HeroBanner() {
   const [isMobile, setIsMobile] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
+  const [curtainOpen, setCurtainOpen] = useState(false);
 
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
+    AOS.init({ duration: 2000 });
 
-    // Ensure this runs only on the client
     if (typeof window !== "undefined") {
       const handleResize = () => {
         setIsMobile(window.innerWidth < 1200);
       };
-
-      const handleScroll = () => {
-        setScrollY(window.scrollY);
-      };
-
-      handleResize(); // Initial check
-
+      handleResize();
       window.addEventListener("resize", handleResize);
-      window.addEventListener("scroll", handleScroll);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-        window.removeEventListener("scroll", handleScroll);
-      };
+      return () => window.removeEventListener("resize", handleResize);
     }
+
+    // Open the curtain after a short delay
+    setTimeout(() => setCurtainOpen(true), 500);
   }, []);
 
   return (
     <div className={styles.container}>
-      {/* Background Image with Parallax Effect */}
-      <div
-        className={styles.bg_img}
-        style={{
-          transform: `translateY(${scrollY * 0.5}px)`, // Adjust speed by changing 0.5
-        }}
-      >
+      {/* Curtain Animation */}
+      {!curtainOpen && (
+        <div className={styles.curtain}>
+          <div className={styles.curtainTop}></div>
+          <div className={styles.curtainBottom}></div>
+        </div>
+      )}
+
+      {/* Background Image */}
+      <div className={styles.bg_img}>
         <Image
           src={
             isMobile
@@ -57,6 +49,7 @@ function HeroBanner() {
         />
       </div>
 
+      {/* Content */}
       <div className={styles.container1}>
         <div className={styles.left_container1_content}>
           <div
@@ -76,26 +69,19 @@ function HeroBanner() {
             >
               The{" "}
               <span
-                style={{
-                  WebkitTextStroke: "3px #fff",
-                  color: "transparent",
-                }}
+                style={{ WebkitTextStroke: "3px #fff", color: "transparent" }}
               >
                 Cafe
               </span>{" "}
               &{" "}
               <span
-                style={{
-                  WebkitTextStroke: "3px #fff",
-                  color: "transparent",
-                }}
+                style={{ WebkitTextStroke: "3px #fff", color: "transparent" }}
               >
                 Audio
               </span>
               <br />
               Based Dating
             </h1>
-
             <div
               style={{
                 width: 500,
@@ -105,6 +91,7 @@ function HeroBanner() {
               className={styles.banner_content}
             >
               <p
+                className={styles.description}
                 style={{
                   color: "#fff",
                   borderRadius: 10,
@@ -164,8 +151,7 @@ function HeroBanner() {
                 </svg>
               </div>
             </div>
-          </div>
-          {/* <div
+            {/* <div
             style={{
               display: "flex",
               alignItems: "center",
@@ -180,6 +166,7 @@ function HeroBanner() {
               alt="Picture of the author"
             />
           </div> */}{" "}
+          </div>
         </div>
       </div>
     </div>
