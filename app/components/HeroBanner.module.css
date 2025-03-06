@@ -1,6 +1,6 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
 .container {
-  /* height: 100vh; */
+  height: 100vh;
 }
 .desc_banner {
   /* font-family: "Gilroy", sans-serif; */
@@ -222,7 +222,10 @@
   .desc_banner {
     /* display: none; */
   }
-
+  .left_container1_content {
+    /* background-color: red; */
+    /* justify-content: flex-end; */
+  }
   .left_container1_content h1 {
     font-size: 50px;
     /* display: none; */
@@ -231,7 +234,7 @@
     /* margin-bottom: 20px; */
     /* display: none; */
     /* background-color: red; */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
   }
   .banner_content {
     display: none;

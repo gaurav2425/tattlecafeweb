@@ -55,7 +55,7 @@ function HeroBanner() {
               style={{
                 fontFamily: "Poppins, sans-serif",
                 position: "relative",
-                lineHeight: "1.1",
+                // lineHeight: "1.1",
               }}
               className={styles.banner_heading}
             >
@@ -85,7 +85,7 @@ function HeroBanner() {
               style={{
                 width: 500,
                 color: "#000",
-                marginTop: 20,
+                // marginTop: 20,
               }}
               className={styles.banner_content}
             >
@@ -106,7 +106,7 @@ function HeroBanner() {
               className={styles.get_started_btn}
               style={{
                 background: "#fff",
-                marginTop: 25,
+                // marginTop: 25,
                 paddingRight: 5,
                 paddingLeft: 15,
                 paddingTop: 5,
