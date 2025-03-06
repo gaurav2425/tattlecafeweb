@@ -106,7 +106,7 @@ function HeroBanner() {
               className={styles.get_started_btn}
               style={{
                 background: "#fff",
-                // marginTop: 25,
+                marginTop: 25,
                 paddingRight: 5,
                 paddingLeft: 15,
                 paddingTop: 5,
