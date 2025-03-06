@@ -6,6 +6,7 @@ import Image from "next/image";
 
 function HeroBanner() {
   const [isMobile, setIsMobile] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     AOS.init({
@@ -18,16 +19,31 @@ function HeroBanner() {
         setIsMobile(window.innerWidth < 1200);
       };
 
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+      };
+
       handleResize(); // Initial check
 
       window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+        window.removeEventListener("scroll", handleScroll);
+      };
     }
   }, []);
 
   return (
     <div className={styles.container}>
-      <div className={styles.bg_img}>
+      {/* Background Image with Parallax Effect */}
+      <div
+        className={styles.bg_img}
+        style={{
+          transform: `translateY(${scrollY * 0.5}px)`, // Adjust speed by changing 0.5
+        }}
+      >
         <Image
           src={
             isMobile
@@ -48,7 +64,6 @@ function HeroBanner() {
               display: "flex",
               flexDirection: "column",
               alignItems: "flex-start",
-              // marginTop: "5%",
             }}
           >
             <h1
@@ -164,7 +179,7 @@ function HeroBanner() {
               height={200 / 2}
               alt="Picture of the author"
             />
-          </div> */}
+          </div> */}{" "}
         </div>
       </div>
     </div>
