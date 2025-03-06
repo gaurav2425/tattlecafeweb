@@ -151,21 +151,21 @@ function HeroBanner() {
                 </svg>
               </div>
             </div>
-            {/* <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <Image
-              className={styles.girls_images}
-              src="/girlsprofile.png"
-              width={586 / 2}
-              height={200 / 2}
-              alt="Picture of the author"
-            />
-          </div> */}{" "}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <Image
+                className={styles.girls_images}
+                src="/girlsprofile.png"
+                width={586 / 2}
+                height={200 / 2}
+                alt="Picture of the author"
+              />
+            </div>{" "}
           </div>
         </div>
       </div>
