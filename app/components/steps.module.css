@@ -1,0 +1,61 @@
+.steps_container {
+  padding: 20px;
+  background-color: #f6f4df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative; /* Needed for absolute positioning of blur */
+}
+
+.steps_heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+.steps_description {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+.steps_inner_container {
+  width: 95%;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 10px;
+  gap: 15px; /* Adds spacing between cards */
+  scroll-behavior: smooth; /* Smooth scrolling */
+
+  /* Custom Scrollbar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #61204e #f6f4df; /* Thumb color | Track color */
+}
+
+/* Custom Scrollbar for WebKit Browsers (Chrome, Edge, Safari) */
+.steps_inner_container::-webkit-scrollbar {
+  height: 8px; /* Horizontal scrollbar height */
+}
+
+.steps_inner_container::-webkit-scrollbar-thumb {
+  background: #61204e; /* Scrollbar color */
+  border-radius: 20px;
+}
+
+.steps_inner_container::-webkit-scrollbar-track {
+  background: #f6f4df; /* Track color */
+}
+
+/* Right Blur Effect */
+.blur_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px; /* Adjust width as needed */
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(246, 244, 223, 1),
+    rgba(246, 244, 223, 0)
+  );
+  pointer-events: none; /* Allows clicks to pass through */
+}

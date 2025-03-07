@@ -4,7 +4,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "i.imghippo.com", // Your external image hosting
+        hostname: "**",
+        port: "",
+        pathname: "**",
+        // hostname: "i.imghippo.com",
+        // Your external image hosting
       },
     ],
   },

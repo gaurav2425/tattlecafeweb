@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 // import SEO from "../next-seo.config";
 // import Head from "next/head";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Steps from "./components/Steps";
 export default function Home() {
   return (
     <ParallaxProvider>
@@ -24,11 +25,11 @@ export default function Home() {
         <HeroBanner></HeroBanner>
 
         <Container1></Container1>
-
-        {/* <div>
+        <Steps></Steps>
+        <div>
           <MobileScroll></MobileScroll>
         </div>
-        <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </ParallaxProvider>
   );

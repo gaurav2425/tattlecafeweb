@@ -5,7 +5,9 @@
   /* background-color: red;
   border: 3px solid white; */
 }
-
+.description {
+  margin-top: 10px;
+}
 .curtain {
   position: absolute;
   top: 0;
