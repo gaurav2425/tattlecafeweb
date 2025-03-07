@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "../components/Container1.module.css";
 import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
 
 function Container1() {
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const parallaxElement = document.querySelector(`.${styles.container4}`);
+  //     if (parallaxElement) {
+  //       const scrollY = window.scrollY;
+  //       parallaxElement.style.backgroundPosition = `center ${scrollY * 0.4}px`;
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
   return (
     <div className={styles.main_container}>
       <div className={styles.container2}>
@@ -45,19 +60,20 @@ function Container1() {
         </div>
       </div>
 
-      {/* Parallax Effect in Container4 */}
-      <div className={styles.parallax_container}>
-        <Parallax speed={-20}>
-          <div className={styles.container4}>
-            <Image
-              src="/pexels-tara-winstead-7666088.jpg" // Replace with the image you want
-              alt="Parallax Background"
-              layout="fill"
-              objectFit="cover"
-              quality={100}
-            />
-          </div>
-        </Parallax>
+      {/* Parallax Effect Without Library in Container4 */}
+      <div
+        className={styles.container4}
+        style={{
+          backgroundImage: "url('/pexels-tara-winstead-7666088.jpg')",
+        }}
+      >
+        {/* <Image
+          src="/pexels-tara-winstead-7666088.jpg" // Replace with the image you want
+          alt="Parallax Background"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        /> */}
       </div>
 
       <div className={styles.container5}>

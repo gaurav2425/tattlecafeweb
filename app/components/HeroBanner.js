@@ -26,7 +26,7 @@ function HeroBanner() {
   }, []);
 
   return (
-    <Parallax speed={-40}>
+    <Parallax speed={-20}>
       <div className={styles.container}>
         {/* Curtain Animation */}
         {!curtainOpen && (
