@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "../components/Container1.module.css";
 import Image from "next/image";
+import { Parallax } from "react-scroll-parallax";
+
 function Container1() {
   return (
     <div className={styles.main_container}>
       <div className={styles.container2}>
         <div className={styles.container2_left}>
           <h1 className={styles.heading}>
-            We’re love <br></br> scientists
+            We’re love <br /> scientists
           </h1>
 
           <h2 className={styles.description}>
@@ -33,27 +35,38 @@ function Container1() {
           }}
         >
           <Image
-            src="/hand.png"
+            src="/hand.png" // Use your image here
             alt="Background"
             width={350}
-            height={100} // Temporary height to avoid errors
+            height={100} // Adjust as needed
             style={{ height: "auto", maxWidth: "100%" }}
             quality={100}
           />
-
-          {/* <img src={require("/hand.png")} className={styles.iphone}></img> */}
         </div>
       </div>
 
-      <div className={styles.container4}></div>
+      {/* Parallax Effect in Container4 */}
+      <div className={styles.parallax_container}>
+        <Parallax speed={-20}>
+          <div className={styles.container4}>
+            <Image
+              src="/pexels-tara-winstead-7666088.jpg" // Replace with the image you want
+              alt="Parallax Background"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+            />
+          </div>
+        </Parallax>
+      </div>
 
       <div className={styles.container5}>
         <div style={{ width: "600px", position: "relative" }}>
           <Image
-            src="/group.png"
-            alt="Background"
+            src="/group.png" // Use your image here
+            alt="Group Image"
             width={600}
-            height={100} // Temporary height to avoid errors
+            height={100} // Adjust as needed
             style={{ height: "auto", maxWidth: "100%" }}
             quality={100}
           />
