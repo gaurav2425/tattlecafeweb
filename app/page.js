@@ -29,7 +29,7 @@ export default function Home() {
         <div>
           <MobileScroll></MobileScroll>
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </div>
     </ParallaxProvider>
   );

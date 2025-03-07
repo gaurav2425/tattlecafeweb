@@ -254,7 +254,7 @@
 .container5right h1 {
   font-weight: 600;
   color: #61204e;
-  font-size: 50px;
+  font-size: 60px;
   font-family: poppins;
 }
 
@@ -308,12 +308,20 @@
   display: flex;
   align-items: center;
 }
-
+.hand_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 @media screen and (max-width: 1100px) {
   .iphone {
     width: 150px;
     display: none;
     /* margin-right: 20vw; */
+  }
+  .hand_image {
+    display: none;
   }
 }
 

@@ -26,21 +26,17 @@ function Container1() {
           </h2>
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "flex-end",
-          }}
-        >
-          <Image
-            src="/hand.png" // Use your image here
-            alt="Background"
-            width={350}
-            height={100} // Adjust as needed
-            style={{ height: "auto", maxWidth: "100%" }}
-            quality={100}
-          />
+        <div className={styles.hand_image}>
+          <div>
+            <Image
+              src="/hand.png" // Use your image here
+              alt="Background"
+              width={350}
+              height={100} // Adjust as needed
+              style={{ height: "auto", maxWidth: "100%" }}
+              quality={100}
+            />
+          </div>
         </div>
       </div>
 
@@ -72,7 +68,7 @@ function Container1() {
           />
         </div>
         <div className={styles.container5right}>
-          <h1>Offer cafes that celebrate specific seasons</h1>
+          <h1 className={styles.heading}>We’re love scientists</h1>
 
           <p>
             Rooms, on the other hand, are virtual spaces within a club or chat
