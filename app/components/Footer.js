@@ -67,12 +67,12 @@ function Footer() {
             Cafe & Audio Based Dating
           </h5>
           <p>
-            If you're looking for a motivated and skilled individual to
-            collaborate on your next project or if you have an exciting
-            opportunity where my expertise could be valuable, I'd love to
-            discuss further! Let's join forces to create something exceptional.
-            Feel free to reach out, and let's explore collaboration
-            possibilities together.
+            Traditional dating apps can sometimes feel shallow and impersonal.
+            Tattle offers a refreshing change by focusing on audio-based
+            interaction. We believe that talking over a voice call reveals much
+            more about a person than a series of pictures or text messages ever
+            could. Start building meaningful relationships through real
+            conversations.
           </p>
 
           <div

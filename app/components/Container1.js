@@ -3,22 +3,6 @@ import styles from "../components/Container1.module.css";
 import Image from "next/image";
 
 function Container1() {
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const parallaxElement = document.querySelector(`.${styles.container4}`);
-  //     if (parallaxElement) {
-  //       const scrollY = window.scrollY;
-  //       parallaxElement.style.backgroundPosition = `center ${scrollY * 0.4}px`;
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   return (
     <div className={styles.main_container}>
       <div className={styles.container2}>
@@ -64,7 +48,7 @@ function Container1() {
       <div
         className={styles.container4}
         style={{
-          backgroundImage: "url('/pexels-tara-winstead-7666088.jpg')",
+          backgroundImage: "url('/pexels-tara-winsteadk-7666088.jpg')",
         }}
       >
         {/* <Image
