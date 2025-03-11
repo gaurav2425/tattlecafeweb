@@ -45,7 +45,14 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.variable}>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#f6f4df" />
+      </head>
+      <body
+        className={poppins.variable}
+        style={{ backgroundColor: "#f6f4df", color: "#333" }}
+      >
         <div
           style={{
             position: "absolute",
@@ -54,10 +61,11 @@ export default function RootLayout({ children }) {
             width: "100%",
             height: "100%",
             overflow: "hidden",
-            background: "black",
+            background: "#f6f4df", // Updated background color
+            color: "#333", // Dark text for contrast
           }}
         >
-          <NavMobile></NavMobile>
+          <NavMobile />
         </div>
         {/* <Navbar />
         {children} */}
