@@ -1,7 +1,8 @@
 import { Poppins, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
-
+import { closeIconSvg } from "./components/svg";
+import NavMobile from "./components/NavMobile";
 export const metadata = {
   title: "TattleCafe | Best Audio Speed Dating & Matchmaking App",
   description:
@@ -45,8 +46,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <Navbar />
-        {children}
+        <div
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%",
+            overflow: "hidden",
+            background: "black",
+          }}
+        >
+          <NavMobile></NavMobile>
+        </div>
+        {/* <Navbar />
+        {children} */}
       </body>
     </html>
   );
