@@ -5,7 +5,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
-import SEO from "./components/SEO"; // ✅ Import client-side SEO component
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,7 +23,8 @@ export default function RootLayout({ children }) {
         className={poppins.className}
         style={{ backgroundColor: "#f6f4df", color: "#333" }}
       >
-        <SEO /> {/* ✅ Works now since RootLayout is also a client component */}
+        {/* <SEO /> */}
+        {/* ✅ Works now since RootLayout is also a client component */}
         <main>
           <Navbar />
           {children}
