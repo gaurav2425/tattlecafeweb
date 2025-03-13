@@ -67,7 +67,9 @@
 
 .navbar_left h1 {
   margin: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+
   font-weight: 500;
   font-size: 25px;
   color: #fff;

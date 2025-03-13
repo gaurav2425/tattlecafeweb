@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
 .steps_container {
   padding: 20px;
   background-color: #f6f4df;
@@ -10,12 +12,16 @@
 }
 
 .steps_heading {
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   font-size: 40px;
 }
 .steps_description {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
+  width: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .steps_inner_container {
   width: 95%;

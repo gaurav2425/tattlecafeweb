@@ -65,10 +65,10 @@ export default function RootLayout({ children }) {
             color: "#333", // Dark text for contrast
           }}
         >
-          <NavMobile />
+          {/* <NavMobile /> */}
         </div>
-        {/* <Navbar />
-        {children} */}
+        <Navbar />
+        {children}
       </body>
     </html>
   );

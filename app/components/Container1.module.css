@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 .container {
   /* background-color: #070707; */
   /* background-color: #f7fbcd; */
@@ -160,8 +160,10 @@
 }
 
 .heading {
-  font-family: "poppins";
-  line-height: 1;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+
+  line-height: 1.4;
 }
 .description {
   font-family: "poppins";
@@ -183,13 +185,15 @@
 }
 
 .container2_left h1 {
-  font-weight: 600;
+  font-weight: 700;
   color: #61204e;
-  font-size: 99px;
+  font-size: 55px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
 }
 
 .container2_left h2 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 17px;
   color: rgb(0, 0, 0);
   width: 700px;
@@ -252,10 +256,11 @@
 }
 
 .container5right h1 {
-  font-weight: 600;
+  font-weight: 700;
   color: #61204e;
-  font-size: 60px;
-  font-family: poppins;
+  font-size: 70px;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
 }
 
 .container5left {
@@ -287,11 +292,12 @@
 
 .container5right p {
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
 
   color: rgb(0, 0, 0);
   /* background-color: wheat; */
   padding: 10px;
+  font-size: 18px;
 }
 
 .container5right {

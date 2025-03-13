@@ -8,21 +8,19 @@ function Container1() {
       <div className={styles.container2}>
         <div className={styles.container2_left}>
           <h1 className={styles.heading}>
-            We’re love <br /> scientists
+            Eliminating Endless Swiping<br></br>Just real connections
           </h1>
 
           <h2 className={styles.description}>
-            Clubs are virtual spaces within a chat application where users can
-            gather to discuss a particular topic or interest. These clubs can be
-            created by users or by the chat application itself, and they
-            typically have a specific theme or focus. For example, a club might
-            be dedicated to discussing a particular hobby, political issue, or
-            entertainment genre. Users can join clubs that interest them and
-            participate in conversations with other members. Rooms, on the other
-            hand, are virtual spaces within a club or chat application where
-            users can have real-time conversations with each other. Rooms can be
-            created by users or by the chat application, and they can be public
-            or private.
+            Tattle Cafe revolutionizes online dating by maintaining a 50:50
+            male-to-female ratio, ensuring equal matchmaking opportunities for
+            everyone. Unlike traditional dating apps that rely on unfair
+            algorithms and endless swiping, we focus on real-time speed dating
+            and authentic interactions with only verified and active profiles.
+            Our system eliminates fake accounts, enhances engagement, and
+            fosters genuine connections through live, 6-minute conversations. No
+            more ghosting, low engagement, or one-sided matches—just a fair,
+            exciting, and smart way to find meaningful relationships.
           </h2>
         </div>
 
@@ -79,13 +77,6 @@ function Container1() {
             a specific group of users. Users can join rooms that interest them
             and participate in text-based or voice-based conversations with
             other members
-          </p>
-          <p>
-            Both clubs and rooms provide users with opportunities to connect
-            with others who share their interests and engage in conversations in
-            a structured and organized way. They can be a great way to build
-            communities within a larger chat application, and they can help
-            users to discover new topics, ideas, and perspectives.
           </p>
         </div>
       </div>
