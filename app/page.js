@@ -15,7 +15,7 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 export default function Home() {
   return (
-    <div>
+    <ParallaxProvider>
       <Head>
         <NextSeo
           title="TattleCafe | Best Audio Speed Dating & Matchmaking App"
@@ -52,15 +52,15 @@ export default function Home() {
       </Head> */}
 
         {/* <DefaultSeo {...SEO} /> */}
-        {/* <HeroBanner></HeroBanner>
+        <HeroBanner></HeroBanner>
 
-        <Container1></Container1> */}
-        {/* <Steps></Steps> */}
+        <Container1></Container1>
+        <Steps></Steps>
         <div>
           <MobileScroll></MobileScroll>
         </div>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
-    </div>
+    </ParallaxProvider>
   );
 }
