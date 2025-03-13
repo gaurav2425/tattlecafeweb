@@ -75,13 +75,14 @@
   line-height: 100px;
   color: #61204e;
   width: 800;
-  font-family: "poppins";
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   /* background: red; */
 }
 
 .screen-description {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 52px;
   font-family: "poppins";
 }
