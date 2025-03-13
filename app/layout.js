@@ -2,6 +2,7 @@ import { Poppins, Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { closeIconSvg } from "./components/svg";
+import { Analytics } from "@vercel/analytics/react";
 import NavMobile from "./components/NavMobile";
 export const metadata = {
   title: "TattleCafe | Best Audio Speed Dating & Matchmaking App",
@@ -69,6 +70,7 @@ export default function RootLayout({ children }) {
         </div>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );
