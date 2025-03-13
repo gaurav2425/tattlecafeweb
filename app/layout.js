@@ -1,5 +1,3 @@
-"use client"; // 🚨 Add this to make it a client component
-
 import Head from "next/head";
 import { Poppins } from "next/font/google";
 import "./globals.css";
