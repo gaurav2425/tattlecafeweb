@@ -1,3 +1,4 @@
+"use client";
 import { DefaultSeo } from "next-seo";
 import { Poppins } from "next/font/google";
 import "./globals.css";
