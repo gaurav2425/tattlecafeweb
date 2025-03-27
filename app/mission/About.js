@@ -3,11 +3,17 @@ import React from "react";
 import styles from "./About.module.css";
 import AboutBar from "../components/AboutBar";
 import Image from "next/image";
+import Head from "next/head";
 // import Navbar from "../../Components/Navbar";
 // import Footer from "../../Components/Footer";
 // import AboutBar from "../../Components/AboutBar";
 // import SEO from "../../Seo/SEO";
 function About() {
+  const title = "About Us - Tattle";
+  const description =
+    "Learn more about Tattle, the speed dating platform with a unique matchmaking approach.";
+  const keywords =
+    "dating, speed dating, relationships, matchmaking, Tattle, online dating";
   const data = [
     {
       question: "What makes Tattle different from other dating apps?",
@@ -64,6 +70,19 @@ function About() {
 
   return (
     <div className={styles.about_container}>
+      <Head>
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tattle.com/about" />
+        <meta property="og:image" content="https://tattle.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+      </Head>
       {/* <Navbar></Navbar>
       <SEO></SEO> */}
       <div className={styles.container1}>
