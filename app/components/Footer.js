@@ -141,6 +141,11 @@ function Footer() {
           </div> */}
         </div>
       </div>
+      <div className={styles.copyright_section}>
+        <p className={styles.copyright_section_para}>
+          © 2025 Tattle Corp. All Rights Reserved.
+        </p>
+      </div>
     </div>
   );
 }

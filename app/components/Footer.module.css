@@ -117,3 +117,20 @@
   font-family: "Merriweather", serif;
   font-optical-sizing: auto;
 }
+
+.copyright_section {
+  background-color: #61204e;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: flex-end;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.copyright_section_para {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-size: 15px;
+}

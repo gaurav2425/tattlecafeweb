@@ -9,6 +9,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 // import DragHandleIcon from "@mui/icons-material/DragHandle";
 import styles from "./Navbar.module.css";
 import { MenuIconSvg } from "./svg";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [activeLink, setActiveLink] = useState("Home");
@@ -30,6 +31,10 @@ export default function Navbar() {
     { key: "Mission", route: "/mission" },
     { key: "Social", route: "/social" },
   ];
+
+  const pathname = usePathname();
+  const hideNavAndFooterPaths = ["/mission", "/social"];
+  const navColor = hideNavAndFooterPaths.includes(pathname);
 
   return (
     <div
@@ -59,7 +64,9 @@ export default function Navbar() {
               className={styles.link}
               onClick={() => setActiveLink(tab.key)}
             >
-              <li style={{ color: bgColor ? "#000" : "#fff" }}>{tab.key}</li>
+              <li style={{ color: bgColor || navColor ? "#000" : "#fff" }}>
+                {tab.key}
+              </li>
             </Link>
           ))}
         </ul>

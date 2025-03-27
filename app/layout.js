@@ -1,5 +1,6 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Head from "next/head";
-// import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
@@ -7,28 +8,21 @@ import { DefaultSeo } from "next-seo";
 import SEO from "./components/SEO";
 import Footer from "./components/Footer";
 
-// const poppins = Merriweather({
-//   subsets: ["latin"],
-//   weight: ["400", "500", "600", "700"],
-//   display: "swap",
-// });
-
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const hideNavAndFooterPaths = ["/join", "/register"];
+  const hideNavAndFooter = hideNavAndFooterPaths.includes(pathname);
+
   return (
     <html lang="en">
       <Head>
         <DefaultSeo {...SEO} />
       </Head>
-      <body
-        // className={poppins.className}
-        style={{ backgroundColor: "#f6f4df", color: "#333" }}
-      >
-        {/* <SEO /> */}
-        {/* ✅ Works now since RootLayout is also a client component */}
+      <body style={{ backgroundColor: "#f6f4df", color: "#333" }}>
         <main>
-          <Navbar />
+          {!hideNavAndFooter && <Navbar />}
           {children}
-          <Footer></Footer>
+          {!hideNavAndFooter && <Footer />}
           <Analytics />
         </main>
       </body>

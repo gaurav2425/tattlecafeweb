@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+.container {
+  background: url("/waitinglist.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  position: relative;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 800px;
+  background-color: white;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: "500";
+  color: #000000;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.button {
+  background: #000000;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-family: "Albert Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.button:hover {
+  background: #000000;
+}
+
+.signIn {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.terms {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
