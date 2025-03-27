@@ -11,13 +11,15 @@
 }
 
 .bar_sub_container h1 {
-  font-family: Gilroy-Bold;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   font-size: 35px;
   color: rgb(0, 0, 0);
 }
 
 .bar_sub_container p {
-  font-family: Gilroy-Bold;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   color: rgb(0, 0, 0);
   margin-top: 10px;
   padding-bottom: 20px;

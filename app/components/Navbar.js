@@ -27,7 +27,7 @@ export default function Navbar() {
 
   const navTabs = [
     { key: "Home", route: "/" },
-    { key: "Mission", route: "/about" },
+    { key: "Mission", route: "/mission" },
     { key: "Social", route: "/social" },
   ];
 

@@ -71,10 +71,11 @@ const MobileScroll = () => {
             <Image
               src={scrollData[currentImg].mobile_img} // Dynamically load the image
               alt="Mobile Mockup"
+              quality={50}
               width={300} // Adjust width
               height={620} // Adjust height
               objectFit="cover" // Maintain aspect ratio
-              priority // Ensures fast loading
+              priority={currentImg === 0}
               key={scrollData[currentImg].mobile_img}
 
               // Forces re-render on change

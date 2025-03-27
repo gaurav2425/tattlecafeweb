@@ -57,7 +57,7 @@ export default function Home() {
         <Container1></Container1>
         <Steps></Steps>
         <div>
-          <MobileScroll></MobileScroll>
+          <MobileScroll />
         </div>
         <Footer></Footer>
       </div>

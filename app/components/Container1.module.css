@@ -61,7 +61,8 @@
   width: 100%;
 }
 .container1 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   font-weight: 600;
   font-size: 90px;
   color: #ffffff;
@@ -94,7 +95,8 @@
   text-align: center;
 }
 .bar h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
   font-weight: 500;
   font-size: 15px;
   color: rgb(255, 255, 255);
@@ -160,13 +162,14 @@
 }
 
 .heading {
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
-
+  font-weight: 600;
   line-height: 1.4;
 }
 .description {
   font-family: "poppins";
+
   /* line-height: 1; */
 }
 .iphone {
@@ -188,7 +191,7 @@
   font-weight: 700;
   color: #61204e;
   font-size: 55px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
 }
 
@@ -259,7 +262,7 @@
   font-weight: 700;
   color: #61204e;
   font-size: 70px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Merriweather", serif;
   font-optical-sizing: auto;
 }
 
@@ -360,7 +363,8 @@
   }
 
   .bar h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
     font-weight: 500;
     font-size: 12px;
   }
@@ -478,7 +482,8 @@
     height: 60vh;
   }
   .container1 h1 {
-    font-family: "Poppins", sans-serif;
+    font-family: "Merriweather", serif;
+    font-optical-sizing: auto;
     font-weight: 600;
     font-size: 25px;
 

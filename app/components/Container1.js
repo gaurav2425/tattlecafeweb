@@ -8,7 +8,7 @@ function Container1() {
       <div className={styles.container2}>
         <div className={styles.container2_left}>
           <h1 className={styles.heading}>
-            Eliminating Endless Swiping<br></br>Just real connections
+            Ditch the Swipes<br></br>Embrace Real Conversations
           </h1>
 
           <h2 className={styles.description}>

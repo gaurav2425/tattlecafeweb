@@ -1,16 +1,17 @@
 import Head from "next/head";
-import { Poppins } from "next/font/google";
+// import { Poppins, Merriweather } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
 import { DefaultSeo } from "next-seo";
 import SEO from "./components/SEO";
+import Footer from "./components/Footer";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-});
+// const poppins = Merriweather({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700"],
+//   display: "swap",
+// });
 
 export default function RootLayout({ children }) {
   return (
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
         <DefaultSeo {...SEO} />
       </Head>
       <body
-        className={poppins.className}
+        // className={poppins.className}
         style={{ backgroundColor: "#f6f4df", color: "#333" }}
       >
         {/* <SEO /> */}
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <main>
           <Navbar />
           {children}
+          <Footer></Footer>
           <Analytics />
         </main>
       </body>
