@@ -4,6 +4,33 @@ import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 
 export default function SEO() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "Tattle - Speed Dating Platform",
+    url: "https://tattle.com",
+    description:
+      "Tattle is a café-based speed dating platform where users are matched based on interests instead of swiping. Ensuring a balanced male-to-female ratio.",
+    applicationCategory: "Dating",
+    operatingSystem: "Web, iOS, Android",
+    browserRequirements: "Requires JavaScript",
+    author: {
+      "@type": "Person",
+      name: "Gaurav",
+    },
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "USD",
+      category: "Free for Female Users",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://tattle.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <>
       <DefaultSeo
@@ -35,6 +62,10 @@ export default function SEO() {
         <meta
           name="keywords"
           content="speed dating app, audio matchmaking, virtual café dating, real-time dating platform, TattleCafe, matchmaking app, online dating"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </Head>
     </>

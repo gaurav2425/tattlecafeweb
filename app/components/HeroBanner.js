@@ -107,7 +107,7 @@ function HeroBanner() {
                   and meaningful matches are made in minutes.
                 </p>
               </div>
-              <Link href="/about" className={styles.navlink}>
+              <Link href="/join" className={styles.navlink}>
                 <div
                   className={styles.get_started_btn}
                   style={{

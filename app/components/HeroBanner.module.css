@@ -8,6 +8,9 @@
 .description {
   margin-top: 10px;
 }
+.navlink {
+  text-decoration: none;
+}
 .curtain {
   position: absolute;
   top: 0;
