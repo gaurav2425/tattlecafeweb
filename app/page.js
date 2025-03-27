@@ -59,7 +59,6 @@ export default function Home() {
         <div>
           <MobileScroll />
         </div>
-        <Footer></Footer>
       </div>
     </ParallaxProvider>
   );

@@ -53,12 +53,14 @@ function Footer() {
       {/* Footer Content */}
       <div className={styles.footer_container}>
         <div className={styles.footer_container_left}>
-          <Image
-            src="/logo2.png"
-            width={250}
-            height={250}
-            alt="Picture of the author"
-          />
+          <div>
+            <Image
+              src="/logo2.png"
+              width={200}
+              height={200}
+              alt="Picture of the author"
+            />
+          </div>
           <TattleIconSvg></TattleIconSvg>
         </div>
 
