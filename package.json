@@ -16,7 +16,7 @@
     "@next/font": "^14.2.15",
     "@vercel/analytics": "^1.5.0",
     "aos": "^2.3.4",
-    "framer-motion": "^12.4.7",
+    "framer-motion": "^12.5.0",
     "next": "^15.2.2",
     "next-seo": "^6.6.0",
     "next-sitemap": "^4.2.3",

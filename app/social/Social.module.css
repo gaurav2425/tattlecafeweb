@@ -1,0 +1,81 @@
+.social_container {
+  /* background-color: rgb(0, 0, 0); */
+  height: 100vh;
+  overflow-y: hidden;
+  /* background: url("https://wallpapercave.com/wp/wp3377158.jpg"); */
+}
+.social_icons {
+  display: flex;
+  flex-direction: row;
+  /* height: 100vh; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  /* background: salmon; */
+  margin-top: -10vh;
+  height: 100vh;
+}
+
+.instagram_icon {
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+}
+
+.twitter_icon {
+  width: 100px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+}
+
+.linkedin_icon {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  color: white;
+}
+
+.instagram_icon:hover {
+  cursor: pointer;
+  animation-name: rotate;
+  position: relative;
+  animation-duration: 3s;
+}
+
+.twitter_icon:hover {
+  cursor: pointer;
+  /* top: -50px; */
+  animation-name: rotate;
+  position: relative;
+  animation-duration: 5s;
+}
+
+.linkedin_icon:hover {
+  cursor: pointer;
+  animation-name: rotate;
+  position: relative;
+  animation-duration: 5s;
+}
+
+@keyframes rotate {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -50px;
+  }
+  50% {
+    top: -50px;
+    transform: rotate(0);
+  }
+  75% {
+    top: -50px;
+    transform: rotate(360deg);
+  }
+  100% {
+    top: 0px;
+  }
+}

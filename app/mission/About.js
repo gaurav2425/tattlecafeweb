@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./About.module.css";
 import AboutBar from "../components/AboutBar";
+import Image from "next/image";
 // import Navbar from "../../Components/Navbar";
 // import Footer from "../../Components/Footer";
 // import AboutBar from "../../Components/AboutBar";
@@ -68,6 +69,15 @@ function About() {
       <div className={styles.container1}>
         <div className={styles.container1_left}>
           {/* <img src={require("../../assets/about_img.png")}></img> */}
+          <Image
+            src={"/goddess.png"}
+            alt="Background"
+            // layout="fill"
+            objectFit="cover"
+            quality={50}
+            width={300}
+            height={220}
+          />
         </div>
 
         <div className={styles.container1_right}>

@@ -5,9 +5,9 @@
   align-items: center;
   background: #f6f4df;
   /* width: 85vw; */
-  border-bottom: 1px solid rgb(119, 115, 115);
-  padding-bottom: 15px;
-  padding-top: 15px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .bar_sub_container h1 {
