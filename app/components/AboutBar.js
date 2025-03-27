@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "../Components/AboutBar.module.css";
+import styles from "../components/AboutBar.module.css";
 // import AddIcon from "@mui/icons-material/Add";
 // import { IconButton } from "@mui/material";
 // import RemoveIcon from "@mui/icons-material/Remove";
