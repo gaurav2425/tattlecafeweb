@@ -8,7 +8,7 @@ function Container1() {
       <div className={styles.container2}>
         <div className={styles.container2_left}>
           <h1 className={styles.heading}>
-            Ditch the Swipes<br></br>Embrace Real Conversations
+            Ditch the Swipes & Embrace<br></br> Real Conversations
           </h1>
 
           <h2 className={styles.description}>
@@ -44,15 +44,7 @@ function Container1() {
         style={{
           backgroundImage: "url('/pexels-tara-winsteadk-7666088.jpg')",
         }}
-      >
-        {/* <Image
-          src="/pexels-tara-winstead-7666088.jpg" // Replace with the image you want
-          alt="Parallax Background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        /> */}
-      </div>
+      ></div>
 
       <div className={styles.container5}>
         <div style={{ width: "600px", position: "relative" }}>

@@ -13,6 +13,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Steps from "./components/Steps";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
+import CityMarquee from "./components/CityMarquee";
 export default function Home() {
   return (
     <ParallaxProvider>
@@ -60,6 +61,7 @@ export default function Home() {
           <MobileScroll />
         </div>
       </div>
+      <CityMarquee />
     </ParallaxProvider>
   );
 }

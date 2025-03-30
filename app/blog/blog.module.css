@@ -1,0 +1,66 @@
+/* styles/Home.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero p {
+  color: #666;
+}
+
+.featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: rebeccapurple;
+}
+
+.featuredContent {
+  max-width: 800px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #f0f0f0;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.blogCard {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blogCard h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.blogCard p {
+  color: #666;
+}

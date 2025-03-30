@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 export default function RootLayout({ children }) {
   const pathname = usePathname();
-  const hideNavAndFooterPaths = ["/join", "/register"];
+  const hideNavAndFooterPaths = ["/join", "/register", "/blog"];
   const hideNavAndFooter = hideNavAndFooterPaths.includes(pathname);
 
   return (

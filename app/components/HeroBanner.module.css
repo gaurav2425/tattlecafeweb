@@ -11,6 +11,9 @@
 .navlink {
   text-decoration: none;
 }
+.navlink:hover {
+  cursor: pointer;
+}
 .curtain {
   position: absolute;
   top: 0;

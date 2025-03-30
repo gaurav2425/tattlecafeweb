@@ -31,7 +31,7 @@ function HeroBanner() {
       <div className={styles.container}>
         {/* Curtain Animation */}
         {!curtainOpen && (
-          <div className={styles.curtain}>
+          <div className={styles.curtain} style={{ pointerEvents: "none" }}>
             <div className={styles.curtainTop}></div>
             <div className={styles.curtainBottom}></div>
           </div>

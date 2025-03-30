@@ -15,15 +15,15 @@ const scrollData = [
     // mobile_img: require("../../assets/home.png"),
   },
   {
-    heading: "Join an Active Community",
+    heading: "Invite Only Dating Real Matches, No Swiping",
     description:
-      " Every member of TattleCafe is verified and actively participating. No more matching with abandoned profiles or inactive users – our community is alive and engaging",
+      "Tattle is a private, invite-only dating app designed for those seeking genuine connections. By keeping it exclusive, we ensure high-quality matches, eliminate fake and inactive profiles, and maintain a balanced male-to-female ratio. Unlike traditional dating apps, our intelligent algorithm pairs you based on true compatibility—no endless swiping, no biased systems. Join a virtual café, meet like-minded people, and enjoy authentic six-minute conversations. Secure your invite and experience dating the right way!",
     mobile_img: "/inviteonlyphone.png",
   },
   {
-    heading: "Time-Limited Cafes",
+    heading: "Find Your Perfect Match Over Coffee",
     description:
-      "Experience the thrill of exclusivity! Time-Limited Cafes are open for specific hours or days, creating a sense of urgency and excitement. Start your day with great conversations in the Morning Brews cafe, unwind after hours in the Night Owls' Den, or make the most of your weekend in the Weekend Wonders cafe. These fleeting moments make every interaction special—don’t miss your chance to connect!",
+      "Tattle brings a fresh twist to dating with café-based matchmaking! Join a real-time dating room where our smart algorithm pairs you with compatible matches while maintaining a balanced male-to-female ratio. No endless swiping—just meaningful six-minute conversations that spark real connections. Speed dating happens daily from 7 PM to 9 PM. Say goodbye to biased algorithms and inactive profiles. Find love over coffee, effortlessly. Try Tattle today!",
     mobile_img: "/phone.png",
   },
   // {
