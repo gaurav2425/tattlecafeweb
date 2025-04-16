@@ -61,7 +61,7 @@ export default function Home() {
           <MobileScroll />
         </div>
       </div>
-      <CityMarquee />
+      {/* <CityMarquee /> */}
     </ParallaxProvider>
   );
 }
