@@ -42,7 +42,8 @@ function Container1() {
       <div
         className={styles.container4}
         style={{
-          backgroundImage: "url('/pexels-tara-winsteadk-7666088.jpg')",
+          backgroundImage:
+            "url('/20250402_1204_Dancing Couple in Darkness_simple_compose_01jqtk9vg6fzds1y6tzjvkb5vt.png')",
         }}
       ></div>
 

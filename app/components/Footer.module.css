@@ -121,12 +121,14 @@
 .copyright_section {
   background-color: #61204e;
   color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-top: 20px; */
+  padding: 20px;
+
   width: 100%;
   text-align: flex-end;
   justify-content: flex-end;
   display: flex;
+  border-top: 0.5px solid rgb(192, 192, 192);
 }
 
 .copyright_section_para {
