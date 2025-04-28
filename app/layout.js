@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Head from "next/head";
+import Script from "next/script"; // ✅ Import Script
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Analytics } from "@vercel/analytics/react";
@@ -19,6 +20,20 @@ export default function RootLayout({ children }) {
         <DefaultSeo {...SEO} />
       </Head>
       <body style={{ backgroundColor: "#f6f4df", color: "#333" }}>
+        {/* Google Analytics scripts */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WTY116E7NT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WTY116E7NT');
+          `}
+        </Script>
+
         <main>
           {!hideNavAndFooter && <Navbar />}
           {children}
