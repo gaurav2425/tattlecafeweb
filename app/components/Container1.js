@@ -43,7 +43,7 @@ function Container1() {
         className={styles.container4}
         style={{
           backgroundImage:
-            "url('/20250402_1204_Dancing Couple in Darkness_simple_compose_01jqtk9vg6fzds1y6tzjvkb5vt.png')",
+            "url('/parallax_image.jpg')",
         }}
       ></div>
 

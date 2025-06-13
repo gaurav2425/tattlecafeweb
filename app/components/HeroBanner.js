@@ -121,55 +121,61 @@ function HeroBanner() {
                   and meaningful matches are made in minutes.
                 </p>
               </div>
-              <Link href="/join" className={styles.navlink}>
-                <div
-                  className={styles.get_started_btn}
-                  style={{
-                    background: "#fff",
-                    marginTop: 25,
-                    paddingRight: 5,
-                    paddingLeft: 15,
-                    paddingTop: 5,
-                    paddingBottom: 5,
-                    borderRadius: 100,
-                    flexDirection: "row",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontSize: 18,
-                      color: "#000",
-                      fontWeight: "600",
-                      fontFamily: "poppins",
-                    }}
-                  >
-                    Book your seat
-                  </p>
-                  <div
-                    style={{
-                      padding: 15,
-                      background: "#61204E",
-                      borderRadius: 100,
-                      marginLeft: 15,
-                    }}
-                  >
-                    <svg
-                      width="24"
-                      height="14"
-                      viewBox="0 0 24 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 14C16 13.258 16.733 12.15 17.475 11.22C18.429 10.02 19.569 8.973 20.876 8.174C21.856 7.575 23.044 7 24 7M24 7C23.044 7 21.855 6.425 20.876 5.826C19.569 5.026 18.429 3.979 17.475 2.781C16.733 1.85 16 0.740001 16 8.34465e-07M24 7L1.43051e-06 7"
-                        stroke="white"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
+            <a
+  href="https://chat.whatsapp.com/DZuaTFK0gV7IHEXNDE3dOe"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.navlink}
+>
+  <div
+    className={styles.get_started_btn}
+    style={{
+      background: "#fff",
+      marginTop: 25,
+      paddingRight: 5,
+      paddingLeft: 15,
+      paddingTop: 5,
+      paddingBottom: 5,
+      borderRadius: 100,
+      flexDirection: "row",
+      display: "flex",
+      alignItems: "center",
+    }}
+  >
+    <p
+      style={{
+        fontSize: 18,
+        color: "#000",
+        fontWeight: "600",
+        fontFamily: "poppins",
+      }}
+    >
+      Join
+    </p>
+    <div
+      style={{
+        padding: 15,
+        background: "#61204E",
+        borderRadius: 100,
+        marginLeft: 15,
+      }}
+    >
+      <svg
+        width="24"
+        height="14"
+        viewBox="0 0 24 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M16 14C16 13.258 16.733 12.15 17.475 11.22C18.429 10.02 19.569 8.973 20.876 8.174C21.856 7.575 23.044 7 24 7M24 7C23.044 7 21.855 6.425 20.876 5.826C19.569 5.026 18.429 3.979 17.475 2.781C16.733 1.85 16 0.740001 16 8.34465e-07M24 7L1.43051e-06 7"
+          stroke="white"
+        />
+      </svg>
+    </div>
+  </div>
+</a>
+
               <div
                 style={{
                   display: "flex",
