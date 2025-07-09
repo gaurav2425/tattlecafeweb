@@ -8,7 +8,7 @@ function Container1() {
       <div className={styles.container2}>
         <div className={styles.container2_left}>
           <h1 className={styles.heading}>
-            Ditch the Swipes & Embrace<br></br> Real Conversations
+            Ditch the Swipes & <br></br> Only Real Convo!
           </h1>
 
           <h2 className={styles.description}>

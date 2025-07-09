@@ -16,9 +16,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <DefaultSeo {...SEO} />
-      </Head>
+      </head>
       <body style={{ backgroundColor: "#f6f4df", color: "#333" }}>
         {/* Google Analytics scripts */}
         <Script

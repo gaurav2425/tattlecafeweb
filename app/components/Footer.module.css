@@ -128,7 +128,7 @@
   text-align: flex-end;
   justify-content: flex-end;
   display: flex;
-  border-top: 0.5px solid rgb(192, 192, 192);
+  /* border-top: 0.5px solid rgb(192, 192, 192); */
 }
 
 .copyright_section_para {

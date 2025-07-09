@@ -8,20 +8,20 @@ import Image from "next/image";
 
 const scrollData = [
   {
-    heading: "Skip the Swipes, Start Conversations!",
+    heading: "Skip the Swipes, Start Convo!",
     description:
       "Say goodbye to endless swiping and ghosting. At TattleCafe, we connect people through real-time audio conversations. No fake profiles, no time-wasting. Just you, your voice, and the chance to connect with someone special..",
     mobile_img: "/phone.png",
     // mobile_img: require("../../assets/home.png"),
   },
   {
-    heading: "Welcome to TattleCafe: The Future of Dating",
+    heading: "Invite Only App",
     description:
       "At TattleCafe, we believe that authentic connections start with real conversations. Unlike traditional dating apps that focus on endless swiping and superficial interactions, we’ve designed a space where meaningful matches are created through live, audio-first speed dating experiences. Whether you’re new to dating or tired of shallow connections, TattleCafe offers a refreshing change.",
     mobile_img: "/inviteonlyphone.png",
   },
   {
-    heading: "Why TattleCafe Works: Real-Time Speed Dating",
+    heading: "Real-Time Speed Dating Application",
     description:
       "Tattle brings a fresh twist to dating with café-based matchmaking! Join a real-time dating room where our smart algorithm pairs you with compatible matches while maintaining a balanced male-to-female ratio. No endless swiping—just meaningful six-minute conversations that spark real connections. Speed dating happens daily from 7 PM to 9 PM. Say goodbye to biased algorithms and inactive profiles. Find love over coffee, effortlessly. Try Tattle today!",
     mobile_img: "/phone.png",
